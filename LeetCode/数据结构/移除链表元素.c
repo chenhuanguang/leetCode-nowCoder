@@ -6,7 +6,6 @@
  * };
  */
 
-
 struct ListNode* removeElements(struct ListNode* head, int val)
 {
     struct ListNode* prev = NULL;
@@ -23,7 +22,7 @@ struct ListNode* removeElements(struct ListNode* head, int val)
                 prev->next = next;
             cur = next;
         }
-        else
+        else  
         {
             prev = cur;
             cur = cur->next;
