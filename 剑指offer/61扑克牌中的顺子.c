@@ -11,7 +11,7 @@ bool isStraight(int* nums, int numsSize)
         return false;
     }
 
-    int tatal = 0;
+    int total = 0;
 
     qsort(nums, numsSize, sizeof(int),CompareInt);
 
@@ -19,7 +19,7 @@ bool isStraight(int* nums, int numsSize)
     {
         if(nums[i] == 0)
         {
-            ++tatal;
+            ++total;
             continue;
         }
 
@@ -28,7 +28,7 @@ bool isStraight(int* nums, int numsSize)
             return false;
         }
     }
-    int min = nums[tatal];
+    int min = nums[total];
     int max = nums[numsSize-1];
 
     return max- min < 5;
