@@ -11,8 +11,7 @@ public:
             {
                 ++fast;
             }
-            if (fast == len)
-                break;
+
             int tmp = fast;
             while (fast > slow)
             {
@@ -21,14 +20,6 @@ public:
                 ++slow;
             }
             fast = slow = ++tmp;
-        }
-        --len;
-        //最后一个单词反转
-        while (slow < len)
-        {
-            swap(s[len], s[slow]);
-            --len;
-            ++slow;
         }
         return s;
     }
