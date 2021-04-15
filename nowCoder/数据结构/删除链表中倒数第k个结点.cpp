@@ -4,7 +4,7 @@
  *	struct ListNode *next;
  * };
  */
- 
+
 class Solution {
 public:
     /**
